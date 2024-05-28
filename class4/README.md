@@ -1815,4 +1815,4 @@ xtuner chat /root/share/new_models/Shanghai_AI_Laboratory/internlm2-chat-1_8b \
 >Q1: Describe this image.\
 >Q2: What is the equipment in the image?
 
-![微调前](images/after_finetune.png)
+![微调后](images/after_finetune.png)
