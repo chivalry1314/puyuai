@@ -142,3 +142,58 @@ conda install pytorch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 pytorch-cuda=
 </details>
 
 #### 安装 Lagent 和 AgentLego
+
+Lagent 和 AgentLego 都提供了两种安装方法，一种是通过 pip 直接进行安装，另一种则是从源码进行安装。为了方便使用 Lagent 的 Web Demo 以及 AgentLego 的 WebUI，我们选择直接从源码进行安装。
+此处附上源码安装的相关帮助文档：
+
+- Lagent：https://lagent.readthedocs.io/zh-cn/latest/get_started/install.html
+- AgentLego：https://agentlego.readthedocs.io/zh-cn/latest/get_started.html
+
+可以执行如下命令进行安装：
+
+```bash
+cd /root/agent
+conda activate agent
+git clone https://gitee.com/internlm/lagent.git
+cd lagent && git checkout 581d9fb && pip install -e . && cd ..
+git clone https://gitee.com/internlm/agentlego.git
+cd agentlego && git checkout 7769e0d && pip install -e . && cd ..
+```
+
+#### 安装其他依赖
+
+在这一步中，我们将会安装其他将要用到的依赖库，如 LMDeploy，可以执行如下命令：
+
+```bash
+conda activate agent
+pip install lmdeploy==0.3.0
+```
+
+#### 准备 Tutorial
+
+由于后续的 Demo 需要用到 tutorial 已经写好的脚本，因此我们需要将 tutorial 通过 git clone 的方法准备好，以备后续使用：
+
+```bash
+cd /root/agent
+git clone -b camp2 https://gitee.com/internlm/Tutorial.git
+```
+
+## Lagent：轻量级智能体框架
+
+在这一部分中，我们将带大家体验 Lagent 的 Web Demo，使用 Lagent 自定义工具，并体验自定义工具的效果。
+
+详细文档可以访问：[Lagent：轻量级智能体框架](lagent.md)。
+
+## AgentLego：组装智能体“乐高”
+
+在这一部分中，我们将带大家直接使用 AgentLego 工具，体验 AgentLego 的 WebUI，以及基于 AgentLego 自定义工具并体验自定义工具的效果。
+
+详细文档可以访问：[AgentLego：组装智能体“乐高”](agentlego.md)。
+
+## Agent 工具能力微调
+
+在这一部分中，我们将介绍 OpenAI Function Calling 的相关内容，以及带大家使用 XTuner 来实现 Agent 工具能力的微调。
+
+详细文档可以访问：[Agent 工具能力微调](finetune.md)。
+
+## 作业
