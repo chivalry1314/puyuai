@@ -195,5 +195,3 @@ git clone -b camp2 https://gitee.com/internlm/Tutorial.git
 在这一部分中，我们将介绍 OpenAI Function Calling 的相关内容，以及带大家使用 XTuner 来实现 Agent 工具能力的微调。
 
 详细文档可以访问：[Agent 工具能力微调](finetune.md)。
-
-## 作业
